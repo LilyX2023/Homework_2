@@ -131,6 +131,23 @@ console.log(waldoElement);
 
 ////////////////////////////////
 //  Excited Kitten
+//Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+
+const floofTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..." ]
+
+for (let i = 0; i < 20; i++) {
+    if (i % 2 === 0) {
+        // Generate a random index to select a message from the array
+        const randomNum = Math.floor(Math.random() * floofTalk.length);
+        const evenMsg = floofTalk[randomNum];
+
+        // Log the randomly selected message
+        console.log(evenMsg);
+    } else{
+        console.log("Love me, pet me! HSSSSSS!");
+    }
+}
+
 ////////////////////////////////
 
 
