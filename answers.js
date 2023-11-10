@@ -117,15 +117,15 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 whereIsWaldo.splice(1,1)
 console.log(whereIsWaldo)
 //Change "Neff" to "No One"
-const neffIndex = whereIsWaldo[1].indexOf("Neff");
+const neffIndex = whereIsWaldo[1].indexOf("Neff")
 // Check if "Neff" is found and replace it with "No One"
 if (neffIndex !== -1) {
     whereIsWaldo[1][neffIndex] = "No One";
 }
-console.log(whereIsWaldo);
+console.log(whereIsWaldo)
 // Access and log the element "Waldo"
-const waldoElement = whereIsWaldo[2][1][1];
-console.log(waldoElement);
+const waldoElement = whereIsWaldo[2][1][1]
+console.log(waldoElement)
 ////////////////////////////////
 
 
@@ -138,13 +138,13 @@ const floofTalk = ["...human...why you taking pictures of me?...", "...the catni
 for (let i = 0; i < 20; i++) {
     if (i % 2 === 0) {
         // Generate a random index to select a message from the array
-        const randomNum = Math.floor(Math.random() * floofTalk.length);
-        const evenMsg = floofTalk[randomNum];
+        const randomNum = Math.floor(Math.random() * floofTalk.length)
+        const evenMsg = floofTalk[randomNum]
 
         // Log the randomly selected message
-        console.log(evenMsg);
+        console.log(evenMsg)
     } else{
-        console.log("Love me, pet me! HSSSSSS!");
+        console.log("Love me, pet me! HSSSSSS!")
     }
 }
 
@@ -153,4 +153,17 @@ for (let i = 0; i < 20; i++) {
 
 ////////////////////////////////
 //  Find the Median
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort((a, b) => a - b)
+// Find the middle index
+const middleIndex = Math.floor(nums.length/2)
+if (nums.length % 2 === 0) {
+    // If even
+    const median = (nums[middleIndex - 1] + nums[middleIndex]) / 2;
+    console.log(median);
+} else {
+    // If odd
+    console.log(nums[middleIndex]);
+}
+//15
 ////////////////////////////////
