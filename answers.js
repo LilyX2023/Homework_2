@@ -54,6 +54,10 @@ console.log(wolfy)
 
 ////////////////////////////////
 // Yell at the Ninja Turtles
+const ninjas = ['Donatello','Leonardo','Raphael','Michaelangelo']
+for  (const ninja of ninjas) {
+    console.log(ninja.toUpperCase())
+}
 ////////////////////////////////
 
 
